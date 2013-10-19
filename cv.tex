@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage{array, xcolor, bibentry}
+\usepackage[margin=3cm]{geometry}
+\usepackage{longtable}
+\usepackage{palatino}
+
+\newcommand{\matlab}{{MATLAB}}
+\newcommand{\clang}{{C}}
+\newcommand{\cplusplus}{{C++}}
+\newcommand{\csharp}{{C\#}}
+\newcommand{\python}{{Python}}
+\newcommand{\perl}{{Perl}}
+\newcommand{\haskell}{{Haskell}}
+\newcommand{\fortran}{{Fortran}}
+\newcommand{\scheme}{{Scheme}}
+\newcommand{\java}{{Java}}
+\newcommand{\gnulinux}{{GNU/Linux}}
+\newcommand{\macosx}{{Mac OS X}}
+\newcommand{\mswin}{{MS Windows}}
+\newcommand{\mysql}{{MySQL}}
+\newcommand{\flash}{{Flash}}
+\newcommand{\air}{{AIR}}
+\newcommand{\asthree}{{ActionScript3}}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\pagestyle{empty}
+ 
+\begin{document}
+
+\vspace{1em}
+\begin{minipage}[ht]{0.48\textwidth}
+{\Huge Lorenzo Stella}
+\end{minipage}
+\begin{minipage}[ht]{0.48\textwidth}
+\begin{tabular}{rl}
+Email:& lorenzostella@gmail.com\\
+Mobile:& +39 331 54 51 166
+\end{tabular}
+\end{minipage}
+\vspace{50pt}
+
+\section*{Professional Experience}
+\begin{longtable}{L!{\VRule}R}
+2013--now & PhD student at IMT Institute for Advanced Studies Lucca (http://www.imtlucca.it), Lucca (Italy).\\[5pt]
+2011--2012 & Research Analyst at COSBI (http://www.cosbi.eu), Trento (Italy).\linebreak
+    Analysis and simulation of stochastic models in systems biology (PK/PD, metabolic networks); inference and analysis of gene regulatory networks; development of tools
+	for stochastic simulation and network analysis in \csharp, \python\ and \matlab\ languages.\\[5pt]
+2011--2011 & Software Developer at WorkHard (http://www.workhard.ph), Florence (Italy).\linebreak
+    Multimedia software development using \asthree\ language for the \flash/\air\ platform; interaction with RFID devices;
+	experiments with \csharp\ and the Microsoft Kinect SDK.
+\end{longtable}
+
+\section*{Education}
+\begin{longtable}{L!{\VRule}R}
+2008--2011 & MSc in Computer Science, University of Florence, $110/110$ cum laude.\linebreak
+    Thesis supervised by Prof. Luigi Brugnano:
+	\begin{center}\textsc{Efficient methods for the numerical solution of Hamiltonian problems}\end{center}
+	Analysis of the effectiveness of numerical methods for differential equations with respect to the preservation
+	of qualitative properties of the simulated system, with particular attention to energy conservation in the case
+	of Hamiltonian systems and to the efficient implementation of such techniques, using a framework developed \emph{ad hoc}
+	with the \clang\ language.\\[5pt]
+2004--2008 & BSc in Computer Science, University of Florence, $110/110$.\linebreak
+    Thesis supervised by Prof. Luigi Brugnano:
+    \begin{center}\textsc{Numerical methods in Linear Algebra with applications to Google's Pagerank}\end{center}
+	Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov
+	chain associated with it, with the aim of combining modeling and mathematical aspects of the problem with those of its efficient
+	resolution on a computer. The approaches and algorithms presented were compared on the basis of experimental results obtained
+	with \matlab\ implementations.
+\end{longtable}
+
+\section*{Scientific and technical skills}
+\begin{longtable}{L!{\VRule}R}
+Mathematics & Algebra, Linear Algebra, Calculus, Numerical Analysis, Probability, Geometry, Dynamical Systems, Mathematical Logic.\\[5pt]
+Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity, Databases.\\[5pt]
+Programming & Excellent knowledge of \clang, \python, \matlab, \java. Good skills in \cplusplus,
+\csharp, \scheme. Familiar with \haskell, \perl, \fortran.\\[5pt]
+Operating systems & \gnulinux. Good knowledge of \macosx, \mswin.\\[5pt]
+Other tools & \LaTeX, \mysql\ database management system.
+\end{longtable}
+
+\section*{Languages}
+\begin{tabular}{L!{\VRule}R}
+Italian & Native\\[5pt]
+English & Fluent
+\end{tabular}
+
+\vspace{2em}
+\centering{\color{lightgray}\footnotesize{Updated \today}}
+
+\end{document}
