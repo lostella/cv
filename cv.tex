@@ -1,46 +1,16 @@
 \documentclass[10pt]{article}
-\usepackage{array, xcolor, bibentry}
-\usepackage[margin=3cm]{geometry}
-\usepackage{longtable}
-\usepackage{needspace}
-\usepackage{multicol}
-\usepackage{quattrocento}
-\usepackage[T1]{fontenc}
 
-\newcommand{\matlab}{{MATLAB}}
-\newcommand{\clang}{{C}}
-\newcommand{\cplusplus}{{C++}}
-\newcommand{\csharp}{{C\#}}
-\newcommand{\python}{{Python}}
-\newcommand{\perl}{{Perl}}
-\newcommand{\haskell}{{Haskell}}
-\newcommand{\fortran}{{Fortran}}
-\newcommand{\scheme}{{Scheme}}
-\newcommand{\java}{{Java}}
-\newcommand{\gnulinux}{{GNU/Linux}}
-\newcommand{\macosx}{{Mac OS X}}
-\newcommand{\mswin}{{MS Windows}}
-\newcommand{\mysql}{{MySQL}}
-\newcommand{\flash}{{Flash}}
-\newcommand{\air}{{AIR}}
-\newcommand{\asthree}{{ActionScript3}}
-
-\definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
-\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
-
-\pagestyle{empty}
+\input{preamble.tex}
  
 \begin{document}
 
 \begin{minipage}[ht]{0.48\textwidth}
-{\Huge Lorenzo Stella}
+{\Huge \name}
 \end{minipage}
 \begin{minipage}[ht]{0.48\textwidth}
 \begin{tabular}{rl}
-{\color{lightgray}Email} & lorenzostella@gmail.com\\
-{\color{lightgray}Mobile} & +39 331 54 51 166
+{\color{lightgray}Email} & \email \\
+{\color{lightgray}Mobile} & \mobile
 \end{tabular}
 \end{minipage}
 \vspace{50pt}
@@ -110,7 +80,7 @@
 Mathematics & Algebra, Linear Algebra, Calculus, Numerical Analysis, Probability, Geometry, Dynamical Systems, Mathematical Logic.\\[5pt]
 Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity, Databases.\\[5pt]
 Programming & Excellent knowledge of \clang, \python, \matlab, \java. Good skills in \cplusplus,
-\csharp, \scheme. Familiar with \haskell, \perl, \fortran.\\[5pt]
+\csharp. Familiar with \scheme, \haskell, \perl, \fortran.\\[5pt]
 Operating systems & \gnulinux. Good knowledge of \macosx, \mswin.\\[5pt]
 Other tools & \LaTeX, \mysql\ database management system.
 \end{longtable}
