@@ -3,6 +3,7 @@
 \usepackage[margin=3cm]{geometry}
 \usepackage{longtable}
 \usepackage{needspace}
+\usepackage{multicol}
 \usepackage{quattrocento}
 \usepackage[T1]{fontenc}
 
@@ -33,7 +34,6 @@
  
 \begin{document}
 
-\vspace{1em}
 \begin{minipage}[ht]{0.48\textwidth}
 {\Huge Lorenzo Stella}
 \end{minipage}
@@ -60,14 +60,33 @@
 \needspace{5\baselineskip}
 \section*{Education}
 \begin{longtable}{L!{\VRule}R}
-2008 -- 2011 & MSc in Computer Science, University of Florence, $110/110$ cum laude.\\[5pt]
+2008 -- 2011 & MSc in Computer Science, University of Florence, 110/110 cum laude.\\[5pt]
     & Thesis, supervised by Prof. Luigi Brugnano:
 	\begin{center}``\textsc{Efficient methods for the numerical solution of Hamiltonian problems}''\end{center}
 	Analysis of the effectiveness of numerical methods for differential equations with respect to the preservation
 	of qualitative properties of the simulated system, with particular attention to energy conservation in the case
 	of Hamiltonian systems and to the efficient implementation of such techniques, using a framework developed \emph{ad hoc}
 	with the \clang\ language.\\[5pt]
-2004 -- 2008 & BSc in Computer Science, University of Florence, $110/110$.\\[5pt]
+    & Courses attended:
+    \begin{multicols}{2}
+    \begin{itemize}
+        \item Algorithm Design
+        \item Algorithms for Networks
+        \item Analysis of Algorithms
+   		\item Approximation Methods I
+   		\item Approximation Methods II
+        \item Combinatorial Modeling
+        \item Data Structures for Databases
+   		\item Distributed Databases
+   		\item Fuzzy Logic
+		\item Information Theory
+		\item Numerical Analysis
+		\item Numerical Methods for CAGD
+		\item Numerical Optimization
+		\item Operational Research
+	\end{itemize}
+    \end{multicols}\\[5pt]
+2004 -- 2008 & BSc in Computer Science, University of Florence, 110/110.\\[5pt]
     & Thesis, supervised by Prof. Luigi Brugnano:
     \begin{center}``\textsc{Numerical methods in Linear Algebra with applications to Google's Pagerank}''\end{center}
 	Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov
