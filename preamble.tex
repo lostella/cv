@@ -3,11 +3,15 @@
 \usepackage{longtable}
 \usepackage{needspace}
 \usepackage{multicol}
-\usepackage{quattrocento}
+\usepackage{libertine}
 \usepackage[T1]{fontenc}
 
 \newcommand{\name}{Lorenzo Stella}
-\newcommand{\email}{lorenzostella@gmail.com}
+\newcommand{\addressCO}{IMT Lucca}
+\newcommand{\addressSTREET}{Piazza San Francesco, 19}
+\newcommand{\addressCITY}{50060 Lucca, Italy}
+%\newcommand{\email}{lorenzostella@gmail.com}
+\newcommand{\email}{lorenzo.stella@imtlucca.it}
 \newcommand{\mobile}{+39 331 54 51 166}
 
 \newcommand{\matlab}{{MATLAB}}
@@ -33,4 +37,9 @@
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
+\newenvironment{cvsection}[1]
+    {\needspace{5\baselineskip}\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large #1}\\[10pt]}
+    {\end{longtable}}
+
 \pagestyle{empty}
+

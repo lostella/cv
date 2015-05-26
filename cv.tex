@@ -4,20 +4,21 @@
  
 \begin{document}
 
-\begin{minipage}[ht]{0.48\textwidth}
+\begin{minipage}[ht]{0.60\textwidth}
 {\Huge \name}
 \end{minipage}
-\begin{minipage}[ht]{0.48\textwidth}
+\begin{minipage}[ht]{0.40\textwidth}
 \begin{tabular}{rl}
+{\color{lightgray}Address} & \addressCO \\
+                           & \addressSTREET \\
+                           & \addressCITY \\
 {\color{lightgray}Email} & \email \\
 {\color{lightgray}Mobile} & \mobile
 \end{tabular}
 \end{minipage}
 \vspace{50pt}
 
-\needspace{5\baselineskip}
-\section*{Professional Experience}
-\begin{longtable}{L!{\VRule}R}
+\begin{cvsection}{Professional Experience}
 2013 -- now & PhD student at IMT Institute for Advanced Studies Lucca (www.imtlucca.it), Lucca (Italy).\\[5pt]
     & Convex analysis and numerical methods in convex optimization, with particular
     focus on splitting methods for the solution of nonsmooth convex composite problems.
@@ -29,15 +30,13 @@
 2011 & Software Developer at WorkHard (www.workhard.ph), Florence (Italy).\\[5pt]
     & Multimedia software development using \asthree\ language for the \flash/\air\ platform. Interaction with RFID devices.
 	Experiments with \csharp\ and the Microsoft Kinect SDK.
-\end{longtable}
+\end{cvsection}
 
-\needspace{5\baselineskip}
-\section*{Education}
-\begin{longtable}{L!{\VRule}R}
+\begin{cvsection}{Education}
 2008 -- 2011 & MSc in Computer Science, University of Florence, 110/110 cum laude.\\[5pt]
-    & Thesis, supervised by Prof. Luigi Brugnano:
-	\begin{center}``\textsc{Efficient methods for the numerical solution of Hamiltonian problems}''\end{center}
-	Analysis of the effectiveness of numerical methods for differential equations with respect to the preservation
+    & Thesis, supervised by Prof. Luigi Brugnano:\\[5pt]
+	& \multicolumn{1}{c}{\textsc{Efficient methods for the numerical solution of Hamiltonian problems}}\\[5pt]
+	& Analysis of the effectiveness of numerical methods for differential equations with respect to the preservation
 	of qualitative properties of the simulated system, with particular attention to energy conservation in the case
 	of Hamiltonian systems and to the efficient implementation of such techniques, using a framework developed \emph{ad hoc}
 	with the \clang\ language.\\[5pt]
@@ -61,42 +60,37 @@
 %	\end{itemize}
 %    \end{multicols}\\[5pt]
 2004 -- 2008 & BSc in Computer Science, University of Florence, 110/110.\\[5pt]
-    & Thesis, supervised by Prof. Luigi Brugnano:
-    \begin{center}``\textsc{Numerical methods in Linear Algebra with applications to Google's Pagerank}''\end{center}
-	Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov
+    & Thesis, supervised by Prof. Luigi Brugnano:\\[5pt]
+    & \multicolumn{1}{c}{\textsc{Numerical methods in Linear Algebra with applications}}\\[0pt]
+    & \multicolumn{1}{c}{\textsc{to Google's Pagerank}}\\[5pt]
+	& Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov
 	chain associated with it, with the aim of combining modeling and mathematical aspects of the problem with those of its efficient
 	resolution on a computer. The approaches and algorithms presented were compared on the basis of experimental results obtained
 	with \matlab\ implementations.
-\end{longtable}
+\end{cvsection}
 
 \bibliographystyle{plain}
 \nobibliography{publications.bib}
 
-\needspace{5\baselineskip}
-\section*{Publications}
-\begin{longtable}{L!{\VRule}R}
+\begin{cvsection}{Publications}
 2014    & \bibentry{patrinos14douglas}\\ \\
         & \bibentry{patrinos14forward}\\ \\
 2013    & \bibentry{scotti13modeling}
-\end{longtable}
+\end{cvsection}
 
-\needspace{5\baselineskip}
-\section*{Scientific and technical skills}
-\begin{longtable}{L!{\VRule}R}
+\begin{cvsection}{Scientific and technical skills}
 Mathematics & Algebra, Linear Algebra, Calculus, Numerical Analysis, Probability, Geometry, Dynamical Systems, Mathematical Logic.\\[5pt]
 Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity, Databases.\\[5pt]
 Programming & Excellent knowledge of \clang, \python, \matlab, \java. Good skills in \cplusplus,
 \csharp. Familiar with \scheme, \haskell, \perl, \fortran.\\[5pt]
 Operating systems & \gnulinux. Good knowledge of \macosx, \mswin.\\[5pt]
 Other tools & \LaTeX, \mysql\ database management system.
-\end{longtable}
+\end{cvsection}
 
-\needspace{5\baselineskip}
-\section*{Languages}
-\begin{tabular}{L!{\VRule}R}
+\begin{cvsection}{Languages}
 Italian & Native\\[5pt]
 English & Fluent
-\end{tabular}
+\end{cvsection}
 
 \vspace{2em}
 \centering{\color{lightgray}\footnotesize{Updated \today}}
