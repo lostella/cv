@@ -1,11 +1,15 @@
-\usepackage{array, xcolor, bibentry}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
 \usepackage[margin=3cm]{geometry}
 \usepackage{longtable}
 \usepackage{needspace}
 \usepackage{multicol}
-\usepackage{libertine}
 \usepackage[T1]{fontenc}
 \usepackage[super]{nth}
+\usepackage{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
 
 \newcommand{\name}{Lorenzo Stella}
 \newcommand{\addressCO}{C/O IMT Lucca}
@@ -34,8 +38,8 @@
 \newcommand{\asthree}{{ActionScript3}}
 
 \definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{0.25\textwidth}}
+\newcolumntype{R}{p{0.75\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \newenvironment{cvsection}[1]
