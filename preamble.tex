@@ -32,6 +32,7 @@
 %\newcommand{\mobile}{+39 331 54 51 166}
 
 % OTHER COMMANDS, ENVIRONMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\spacednewline}{\\[5pt]}
 \newcommand{\subtitle}[1]{\hfill{\footnotesize (#1)}}
 \newcommand{\lang}[1]{{\sc #1}}
 \newcommand{\myurl}[1]{{\sf #1}}
@@ -45,7 +46,7 @@
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \newenvironment{cvsection}[1]
-    {\centering\needspace{5\baselineskip}\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large #1}\\[10pt]}
+    {\centering\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large #1}\\[5pt]}
     {\end{longtable}}
 
 % FANCYHDR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
