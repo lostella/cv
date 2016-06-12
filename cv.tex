@@ -4,34 +4,40 @@
  
 \begin{document}
 
-\begin{minipage}[ht]{0.60\textwidth}
-{\Huge \name}
+\begin{minipage}[t]{0.5\textwidth}
+	{\Huge\name}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+	\begin{tabular}{rl}
+		{\color{lightgray}Address} 	& \addressCO \\
+   		 	                       	& \addressSTREET \\
+        		                   	& \addressCITY \\
+		{\color{lightgray}Email} 	& \emailONE \\
+									& \emailTWO
+		%{\color{lightgray}Mobile} & \mobile
+	\end{tabular}
 \end{minipage}
-\begin{minipage}[ht]{0.40\textwidth}
-\begin{tabular}{rl}
-{\color{lightgray}Address} & \addressCO \\
-                           & \addressSTREET \\
-                           & \addressCITY \\
-{\color{lightgray}Email} & \email \\
-{\color{lightgray}Mobile} & \mobile
-\end{tabular}
-\end{minipage}
-\vspace{50pt}
+
+\vspace{30pt}
+
+\begin{cvsection}{General information}
+Born & December 12, 1985 in Bagno a Ripoli, Florence (Italy) \\[5pt]
+Nationality & Italian, USA
+\end{cvsection}
 
 \begin{cvsection}{Professional Experience}
-Sept. 2015 -- Jan. 2016 & Visiting PhD student at KU Leuven, Leuven (Belgium).\\[5pt]
-	& Departement Elektrotechniek (ESAT), Stadius division.\\[5pt]
-	& \url{www.esat.kuleuven.be/stadius}\\[5pt]
-2013 -- now & PhD student at IMT Institute for Advanced Studies Lucca, Lucca (Italy).\\[5pt]
-	& \url{www.imtlucca.it}\\[5pt]
-    & Convex analysis and numerical methods in convex optimization, with particular
-    focus on splitting methods for the solution of nonsmooth convex composite problems.
+Sept 2015 -- now & Visiting PhD student at KU Leuven, Leuven (Belgium),\\
+	& Departement Elektrotechniek (ESAT),\\
+	& Stadius division.\hfill\href{http://www.esat.kuleuven.be/stadius}{\myurl{www.esat.kuleuven.be/stadius}}\\[5pt]
+	& Teaching assistant for the Optimization class (exercises and laboratory sessions).\\[5pt]
+Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).\hfill\href{http://www.imtlucca.it}{\myurl{www.imtlucca.it}}\\[5pt]
+    & Convex optimization, operator splitting methods. Derivation, analysis and implementation of line-search methods based on the concept of \emph{splitting envelope} function, to tackle nonsmooth (possibly constrained) optimization problems
+    (both convex and nonconvex) with classical smooth unconstrained techniques.
     Applications to optimal control problems, distributed optimization and large-scale
     problems arising in machine learning, image processing.\\[5pt]
-2011 -- 2012 & Research Analyst at COSBI, Trento (Italy).\\[5pt]
-	& \url{www.cosbi.eu}\\[5pt]
+2011 -- 2012 & Research Analyst at COSBI, Trento (Italy).\hfill\href{http://www.cosbi.eu}{\myurl{www.cosbi.eu}}\\[5pt]
     & Analysis and simulation of stochastic models in systems biology (PK/PD, metabolic networks). Inference and analysis of gene regulatory networks. Development of tools
-	for stochastic simulation and network analysis in \csharp, \python\ and \matlab\ languages.\\[5pt]
+	for stochastic simulation and network analysis in \lang{C\#}, \lang{Python}\ and \lang{MATLAB}\ languages.\\[5pt]
 \end{cvsection}
 
 \begin{cvsection}{Education}
@@ -42,7 +48,7 @@ Sept. 2015 -- Jan. 2016 & Visiting PhD student at KU Leuven, Leuven (Belgium).\\
 	& Analysis of the effectiveness of numerical methods for differential equations with respect to the preservation
 	of qualitative properties of the simulated system, with particular attention to energy conservation in the case
 	of Hamiltonian systems and to the efficient implementation of such techniques, using a framework developed \emph{ad hoc}
-	with the \clang\ language.\\[5pt]
+	in \lang{C}.\\[5pt]
 %    & Courses attended:
 %    \begin{multicols}{2}
 %    \begin{itemize}
@@ -69,37 +75,49 @@ Sept. 2015 -- Jan. 2016 & Visiting PhD student at KU Leuven, Leuven (Belgium).\\
 	& Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov
 	chain associated with it, with the aim of combining modeling and mathematical aspects of the problem with those of its efficient
 	resolution on a computer. The approaches and algorithms presented were compared on the basis of experimental results obtained
-	with \matlab\ implementations.
+	with \lang{MATLAB}\ implementations.
 \end{cvsection}
 
 \bibliographystyle{plain}
 \nobibliography{publications.bib}
 
-\begin{cvsection}{Publications}
+\begin{cvsection}{Publications \subtitle{Google Scholar: \myscholar}}
+%		& {\small Google Scholar: \myscholar} \\
+%		& {\small ArXiv: \myarxiv} \\ \\
+%2016	& \bibentry{themelis16forward}\\ \\
+2016	& \bibentry{stella16forward}\\ \\
+		& \bibentry{latafat16new}\\ \\
 2014    & \bibentry{patrinos14douglas}\\ \\
         & \bibentry{patrinos14forward}\\ \\
 2013    & \bibentry{scotti13modeling}
 \end{cvsection}
 
-\begin{cvsection}{Talks and seminars}
-Jul. 2015 & \emph{Accelerated L-BFGS for large scale nonsmooth convex optimization}, at the \nth{22} International Symposium on Mathematical
-    Programming (ISMP 2015), Pittsburgh, PA, USA. \\[5pt]
-Dec. 2014 & \emph{Douglas-Rachford splitting: complexity estimates and accelerated variants}, at the \nth{53} IEEE Conference on Decision
-    and Control (CDC 2014), Los Angeles, CA, USA.
-\end{cvsection}
+%\begin{cvsection}{Talks and seminars}
+%Jul. 2015 & \emph{Accelerated L-BFGS for large scale nonsmooth convex optimization}, at the \nth{22} International Symposium on Mathematical
+%    Programming (ISMP 2015), Pittsburgh, PA, USA. \\[5pt]
+%Dec. 2014 & \emph{Douglas-Rachford splitting: complexity estimates and accelerated variants}, at the \nth{53} IEEE Conference on Decision
+%    and Control (CDC 2014), Los Angeles, CA, USA.
+%\end{cvsection}
 
-\begin{cvsection}{Scientific and technical skills}
-Mathematics & Linear Algebra, Calculus, Numerical Analysis, Numerical Optimization, Probability, Dynamical Systems.\\[5pt]
-Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity.\\[5pt]
-Programming & Excellent knowledge of \clang, \python, \matlab, \java. Good skills in \cplusplus,
-\csharp. Familiar with \scheme, \haskell, \perl, \fortran.\\[5pt]
+\begin{cvsection}{Technical skills}
+%Mathematics & Calculus, Linear Algebra, Numerical Analysis, Numerical Optimization, Probability, Dynamical Systems.\\[5pt]
+%Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity.\\[5pt]
+Programming & Excellent knowledge of \lang{C}, \lang{Python}, \lang{MATLAB}. Good skills in \lang{Java}, \lang{C++}, \lang{C\#}. Familiar with \lang{Haskell}, \lang{Scheme}, \lang{Perl}, \lang{Fortran}. Experience with the \lang{Git} version control system, the \lang{Cppunit} unit testing framework and continuous integration tools.\\[5pt]
 %Operating systems & \gnulinux. Good knowledge of \macosx, \mswin.\\[5pt]
 %Other tools & \LaTeX, \mysql\ database management system.
 \end{cvsection}
 
+\begin{cvsection}{Software projects \subtitle{GitHub: \mygithub}}
+%			& {\small GitHub: \mygithub} \\ \\
+ForBES		& Generic and efficient \lang{MATLAB}\ solver for nonsmooth optimization problems. \\
+			& Web page: \href{http://kul-forbes.github.io/ForBES}{\myurl{kul-forbes.github.io/ForBES}} \\ \\
+libForBES	& Framework in \lang{C++}\ for modeling and solving large-scale convex and nonconvex optimization problems. \\
+			& Web page: \href{http://kul-forbes.github.io/libForBES}{\myurl{kul-forbes.github.io/libForBES}}
+\end{cvsection}
+
 \begin{cvsection}{Languages}
 Italian & Native\\[5pt]
-English & Fluent
+English & Full professional proficiency
 \end{cvsection}
 
 \vspace{1em}

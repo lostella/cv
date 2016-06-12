@@ -2,49 +2,54 @@
 \usepackage{xcolor}
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
-\usepackage[margin=3cm]{geometry}
+\usepackage[margin=2.5cm]{geometry}
 \usepackage{longtable}
 \usepackage{needspace}
 \usepackage{multicol}
 \usepackage[T1]{fontenc}
 \usepackage[super]{nth}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 \makeatletter\let\@bibitem\saved@bibitem\makeatother
 
 \newcommand{\name}{Lorenzo Stella}
-\newcommand{\addressCO}{C/O IMT Lucca}
-\newcommand{\addressSTREET}{Piazza San Francesco, 19}
-\newcommand{\addressCITY}{55100 Lucca, Italy}
-%\newcommand{\email}{lorenzostella@gmail.com}
-\newcommand{\email}{lorenzo.stella@imtlucca.it}
-\newcommand{\mobile}{+39 331 54 51 166}
 
-\newcommand{\matlab}{{MATLAB}}
-\newcommand{\clang}{{C}}
-\newcommand{\cplusplus}{{C++}}
-\newcommand{\csharp}{{C\#}}
-\newcommand{\python}{{Python}}
-\newcommand{\perl}{{Perl}}
-\newcommand{\haskell}{{Haskell}}
-\newcommand{\fortran}{{Fortran}}
-\newcommand{\scheme}{{Scheme}}
-\newcommand{\java}{{Java}}
-\newcommand{\gnulinux}{{GNU/Linux}}
-\newcommand{\macosx}{{Mac OS X}}
-\newcommand{\mswin}{{MS Windows}}
-\newcommand{\mysql}{{MySQL}}
-\newcommand{\flash}{{Flash}}
-\newcommand{\air}{{AIR}}
-\newcommand{\asthree}{{ActionScript3}}
+% ADDRESS LUCCA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\addressCO}{C/O IMT Lucca}
+%\newcommand{\addressSTREET}{Piazza San Francesco, 19}
+%\newcommand{\addressCITY}{55100 Lucca, Italy}
+
+% ADDRESS LEUVEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\addressCO}{C/O ESAT, KU Leuven}
+\newcommand{\addressSTREET}{Kasteelpark Arenberg 10}
+\newcommand{\addressCITY}{3001 Leuven, Belgium}
+
+% EMAIL, PHONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\emailONE}{lorenzo.stella@imtlucca.it}
+\newcommand{\emailTWO}{lorenzo.stella@esat.kuleuven.be}
+\newcommand{\email}{lorenzostella@gmail.com}
+%\newcommand{\mobile}{+39 331 54 51 166}
+
+% OTHER COMMANDS, ENVIRONMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\subtitle}[1]{\hfill{\footnotesize (#1)}}
+\newcommand{\lang}[1]{{\sc #1}}
+\newcommand{\myurl}[1]{{\sf #1}}
+\newcommand{\mygithub}{\href{http://github.com/lostella}{\myurl{github.com/lostella}}}
+\newcommand{\myscholar}{\href{http://scholar.google.com/citations?user=Y3ag8YsAAAAJ}{\myurl{scholar.google.com/citations?user=Y3ag8YsAAAAJ}}}
+\newcommand{\myarxiv}{\href{http://arxiv.org/find/math/1/au:+Stella_L/0/1/0/all/0/1}{\myurl{arxiv.org/find/math/1/au:+Stella_L/0/1/0/all/0/1}}}
 
 \definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.25\textwidth}}
-\newcolumntype{R}{p{0.75\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{1in}}%0.2\textwidth}}
+\newcolumntype{R}{p{5in}}%0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \newenvironment{cvsection}[1]
-    {\needspace{5\baselineskip}\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large #1}\\[10pt]}
+    {\centering\needspace{5\baselineskip}\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large #1}\\[10pt]}
     {\end{longtable}}
 
-\pagestyle{empty}
-
+% FANCYHDR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\color{lightgray}{Page \thepage\ of \pageref{LastPage}}}
+\renewcommand{\headrulewidth}{0pt}
