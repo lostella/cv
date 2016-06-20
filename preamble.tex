@@ -16,37 +16,38 @@
 \newcommand{\name}{Lorenzo Stella}
 
 % ADDRESS LUCCA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newcommand{\addressCO}{C/O IMT Lucca}
+%\newcommand{\addressCO}{IMT Lucca}
 %\newcommand{\addressSTREET}{Piazza San Francesco, 19}
 %\newcommand{\addressCITY}{55100 Lucca, Italy}
 
 % ADDRESS LEUVEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\addressCO}{C/O ESAT, KU Leuven}
+\newcommand{\addressCO}{ESAT, KU Leuven}
 \newcommand{\addressSTREET}{Kasteelpark Arenberg 10}
 \newcommand{\addressCITY}{3001 Leuven, Belgium}
 
 % EMAIL, PHONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\emailONE}{lorenzo.stella@imtlucca.it}
-\newcommand{\emailTWO}{lorenzo.stella@esat.kuleuven.be}
-\newcommand{\email}{lorenzostella@gmail.com}
+\newcommand{\emailONE}{{\tt lorenzo.stella@imtlucca.it}}
+\newcommand{\emailTWO}{{\tt lstella@esat.kuleuven.be}}
+\newcommand{\email}{{\tt lorenzostella@gmail.com}}
 %\newcommand{\mobile}{+39 331 54 51 166}
 
 % OTHER COMMANDS, ENVIRONMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\spacednewline}{\\[5pt]}
 \newcommand{\subtitle}[1]{\hfill{\footnotesize (#1)}}
 \newcommand{\lang}[1]{{\sc #1}}
-\newcommand{\myurl}[1]{{\sf #1}}
+\newcommand{\myurl}[1]{{\tt #1}}
 \newcommand{\mygithub}{\href{http://github.com/lostella}{\myurl{github.com/lostella}}}
 \newcommand{\myscholar}{\href{http://scholar.google.com/citations?user=Y3ag8YsAAAAJ}{\myurl{scholar.google.com/citations?user=Y3ag8YsAAAAJ}}}
+\newcommand{\mywebpage}{\href{http://lostella.github.io}{\myurl{lostella.github.io}}}
 \newcommand{\myarxiv}{\href{http://arxiv.org/find/math/1/au:+Stella_L/0/1/0/all/0/1}{\myurl{arxiv.org/find/math/1/au:+Stella_L/0/1/0/all/0/1}}}
 
 \definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{1in}}%0.2\textwidth}}
-\newcolumntype{R}{p{5in}}%0.8\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{0.15\textwidth}}
+\newcolumntype{R}{p{0.85\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \newenvironment{cvsection}[1]
-    {\centering\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large #1}\\[5pt]}
+    {\centering\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\large \bf #1}\\[5pt]}
     {\end{longtable}}
 
 % FANCYHDR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

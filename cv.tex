@@ -4,32 +4,42 @@
  
 \begin{document}
 
-\begin{minipage}[t]{0.5\textwidth}
-	{\Huge\name}
-\end{minipage}%
-\begin{minipage}[t]{0.5\textwidth}
+{\Huge\name}
+
+\vspace{20pt}
+
+\begin{minipage}[t]{0.28\linewidth}
+	\small
+	\begin{tabular}{rl}
+		{\color{lightgray}Born}	 	& December 12, 1985 \\
+		{\color{lightgray}In}		& Florence (Italy) \\
+		{\color{lightgray}Nationality}	& Italian, American \\
+	\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\linewidth}
+	\small
 	\begin{tabular}{rl}
 		{\color{lightgray}Address} 	& \addressCO \\
    		 	                       	& \addressSTREET \\
         		                   	& \addressCITY \\
+	\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}
+	\small
+	\begin{tabular}{rl}
 		{\color{lightgray}Email} 	& \emailONE \\
-									& \emailTWO
-		%{\color{lightgray}Mobile} & \mobile
+									& \emailTWO \\
+		{\color{lightgray}Web}		& \mywebpage
 	\end{tabular}
 \end{minipage}
 
 \vspace{20pt}
 
-\begin{cvsection}{General information}
-Born & December 12, 1985 in Bagno a Ripoli, Florence (Italy).\spacednewline
-Nationality & Italian, American.
-\end{cvsection}
-
 \begin{cvsection}{Professional Experience}
 Sept 2015 -- now & Visiting PhD student at KU Leuven, Leuven (Belgium),\\
 	& Departement Elektrotechniek (ESAT),\\
 	& Stadius division.\hfill\href{http://www.esat.kuleuven.be/stadius}{\myurl{www.esat.kuleuven.be/stadius}}\spacednewline
-	& Teaching assistant for the Optimization class (exercises and laboratory sessions).\spacednewline
+	& Teaching assistant, exercises and laboratory sessions for the Optimization class (\mbox{H03E3a}, taught by Panos Patrinos).\spacednewline
 Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).\hfill\href{http://www.imtlucca.it}{\myurl{www.imtlucca.it}}\spacednewline
     & Convex optimization, operator splitting methods. Derivation, analysis and implementation of line-search methods based on the concept of \emph{splitting envelope} function, to tackle nonsmooth (possibly constrained) optimization problems
     (both convex and nonconvex) with classical smooth unconstrained techniques.
@@ -41,13 +51,12 @@ Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).
 \end{cvsection}
 
 \begin{cvsection}{Education}
-2008 -- 2011 & MSc in Computer Science, University of Florence, 110/110 cum laude.\spacednewline
-    & Thesis, supervised by Prof. Luigi Brugnano:\spacednewline
-	& \multicolumn{1}{c}{\textsc{Efficient methods for the numerical solution }}\\[0pt]
-    & \multicolumn{1}{c}{\textsc{of Hamiltonian problems}}\spacednewline
-	& Analysis of the effectiveness of numerical methods for ODEs with respect to the conservation of energy in the case
-	of Hamiltonian systems. Efficient implementation of such techniques, using a framework developed \emph{ad hoc}
-	in \lang{C}.\spacednewline
+2008 -- 2011 & M.S. in Computer Science, University of Florence, 110/110 cum laude.\spacednewline
+%    & Thesis, supervised by Prof. Luigi Brugnano:\spacednewline
+%	& \multicolumn{1}{c}{\textsc{Efficient methods for the numerical solution }}\\[0pt]
+%    & \multicolumn{1}{c}{\textsc{of Hamiltonian problems}}\spacednewline
+	& Thesis supervised by Prof. Luigi Brugnano, \emph{Efficient methods for the numerical solution of Hamiltonian problems}.
+	Analysis of the effectiveness of numerical methods for ODEs with respect to the conservation of energy in the case of Hamiltonian systems. Efficient implementation of such techniques, using a framework developed \emph{ad hoc} in \lang{C}.\spacednewline
 %    & Courses attended:
 %    \begin{multicols}{2}
 %    \begin{itemize}
@@ -67,21 +76,19 @@ Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).
 %		\item Operational Research
 %	\end{itemize}
 %    \end{multicols}\spacednewline
-2004 -- 2008 & BSc in Computer Science, University of Florence, 110/110.\spacednewline
-    & Thesis, supervised by Prof. Luigi Brugnano:\spacednewline
-    & \multicolumn{1}{c}{\textsc{Numerical methods in Linear Algebra with applications}}\\[0pt]
-    & \multicolumn{1}{c}{\textsc{to Google's Pagerank}}\spacednewline
-	& Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov
-	chain associated with it. The approaches and algorithms presented were compared on the basis of experimental results obtained
-	with \lang{Matlab}\ implementations.
+2004 -- 2008 & B.S. in Computer Science, University of Florence, 110/110.\spacednewline
+%    & Thesis, supervised by Prof. Luigi Brugnano:\spacednewline
+%    & \multicolumn{1}{c}{\textsc{Numerical methods in Linear Algebra with applications}}\\[0pt]
+%    & \multicolumn{1}{c}{\textsc{to Google's Pagerank}}\spacednewline
+	& Thesis supervised by Prof. Luigi Brugnano, \emph{Numerical methods in Linear Algebra with applications to Google's Pagerank}. Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov chain associated with it. The approaches and algorithms presented were compared on the basis of experimental results obtained with \lang{Matlab}\ implementations.
 \end{cvsection}
 
 \bibliographystyle{plain}
 \nobibliography{publications.bib}
 
 \begin{cvsection}{Publications \subtitle{Google Scholar: \myscholar}}
-%2016	& \bibentry{themelis16forward}\spacednewline
-2016	& \bibentry{stella16forward}\spacednewline
+2016	& \bibentry{themelis16forward}\spacednewline
+		& \bibentry{stella16forward}\spacednewline
 		& \bibentry{latafat16new}\spacednewline
 2014    & \bibentry{patrinos14douglas}\spacednewline
         & \bibentry{patrinos14forward}\spacednewline
@@ -98,21 +105,21 @@ Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).
 \begin{cvsection}{Technical skills}
 %Mathematics & Calculus, Linear Algebra, Numerical Analysis, Numerical Optimization, Probability, Dynamical Systems.\spacednewline
 %Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity.\spacednewline
-Programming & Excellent knowledge of \lang{C}, \lang{Python}, \lang{MATLAB}. Good skills in \lang{Java}, \lang{C++}, \lang{C\#}. Familiar with \lang{Haskell}, \lang{Scheme}, \lang{Perl}, \lang{Fortran}.\spacednewline
-& Experience with the \lang{Git} version control system, the \lang{Cppunit} unit testing framework and \lang{Travis-CI} for continuous integration.
+Programming & Excellent knowledge of \lang{C}, \lang{Python}, \lang{MATLAB}. Proficient in \lang{Java}, \lang{C++}, \lang{C\#}. Familiar with \lang{Haskell}, \lang{Scheme}, \lang{Perl}, \lang{Fortran}.\spacednewline
+& Experience with \lang{Git} for version control system, \lang{Cppunit} for unit testing and \lang{Travis-CI} for continuous integration.
 \end{cvsection}
 
 \begin{cvsection}{Software projects \subtitle{GitHub: \mygithub}}
 %			& {\small GitHub: \mygithub} \\ \\
 ForBES		& Generic and efficient \lang{Matlab}\ solver for nonsmooth optimization problems. The solver is provided with a library of mathematical functions used in applications, along with their gradient and proximal operations.\spacednewline
 			& Web page: \href{http://kul-forbes.github.io/ForBES}{\myurl{kul-forbes.github.io/ForBES}} \\ \\
-libForBES	& Framework in \lang{C++}\ for modeling and solving large-scale convex and nonconvex optimization problems. Started as a lower-level implementation of ForBES, to overcome the drawbacks of \lang{Matlab}, it will allow to interface many high-level languages (including \lang{R}, \lang{Python}, \lang{Julia}) to a unique solver capable of addressing nonsmooth optimization problems from several application fields.\spacednewline
+libForBES	& Framework in \lang{C++}\ for modeling and solving large-scale nonsmooth optimization problems. Started as a low-level implementation of ForBES, to overcome the drawbacks of \lang{Matlab}, it will allow to interface many high-level languages (including \lang{R}, \lang{Python}, \lang{Julia}) to a unique solver capable of addressing nonsmooth optimization problems from several application fields.\spacednewline
 			& Web page: \href{http://kul-forbes.github.io/libForBES}{\myurl{kul-forbes.github.io/libForBES}}
 \end{cvsection}
 
 \begin{cvsection}{Languages}
 Italian & Native\spacednewline
-English & Full professional proficiency
+English & Native
 \end{cvsection}
 
 \vspace{1em}
