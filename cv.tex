@@ -4,17 +4,18 @@
  
 \begin{document}
 
-{\Huge\name}
+%{\Huge\name}
 
-\vspace{20pt}
+%\vspace{20pt}
 
 \begin{minipage}[t]{0.28\linewidth}
-	\small
-	\begin{tabular}{rl}
-		{\color{lightgray}Born}	 	& December 12, 1985 \\
-		{\color{lightgray}In}		& Florence (Italy) \\
-		{\color{lightgray}Nationality}	& Italian, American \\
-	\end{tabular}
+	{\huge\name}
+%	\small
+%	\begin{tabular}{rl}
+%		{\color{lightgray}Born}	 	& December 12, 1985 \\
+%		{\color{lightgray}In}		& Florence (Italy) \\
+%		{\color{lightgray}Nationality}	& American, Italian \\
+%	\end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\linewidth}
 	\small
@@ -83,7 +84,7 @@ Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).
 	& Thesis supervised by Prof. Luigi Brugnano, \emph{Numerical methods in Linear Algebra with applications to Google's Pagerank}. Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov chain associated with it. The approaches and algorithms presented were compared on the basis of experimental results obtained with \lang{Matlab}\ implementations.
 \end{cvsection}
 
-\bibliographystyle{plain}
+\bibliographystyle{siam}
 \nobibliography{publications.bib}
 
 \begin{cvsection}{Publications \subtitle{Google Scholar: \myscholar}}
@@ -91,38 +92,39 @@ Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).
 		& \bibentry{stella16forward}\spacednewline
 		& \bibentry{latafat16new}\spacednewline
 2014    & \bibentry{patrinos14douglas}\spacednewline
-        & \bibentry{patrinos14forward}\spacednewline
-2013    & \bibentry{scotti13modeling}
+        & \bibentry{patrinos14forward}%\spacednewline
+%2013    & \bibentry{scotti13modeling}
 \end{cvsection}
 
-%\begin{cvsection}{Talks and seminars}
-%Jul. 2015 & \emph{Accelerated L-BFGS for large scale nonsmooth convex optimization}, at the \nth{22} International Symposium on Mathematical
-%    Programming (ISMP 2015), Pittsburgh, PA, USA. \spacednewline
-%Dec. 2014 & \emph{Douglas-Rachford splitting: complexity estimates and accelerated variants}, at the \nth{53} IEEE Conference on Decision
-%    and Control (CDC 2014), Los Angeles, CA, USA.
-%\end{cvsection}
-
-\begin{cvsection}{Technical skills}
-%Mathematics & Calculus, Linear Algebra, Numerical Analysis, Numerical Optimization, Probability, Dynamical Systems.\spacednewline
-%Computer Science & Algorithms, Data Structures, Theoretical Computer Science and Computational Complexity.\spacednewline
-Programming & Excellent knowledge of \lang{C}, \lang{Python}, \lang{MATLAB}. Proficient in \lang{Java}, \lang{C++}, \lang{C\#}. Familiar with \lang{Haskell}, \lang{Scheme}, \lang{Perl}, \lang{Fortran}.\spacednewline
-& Experience with \lang{Git} for version control system, \lang{Cppunit} for unit testing and \lang{Travis-CI} for continuous integration.
+\begin{cvsection}{Talks and seminars}
+Nov. 2015 & ``Proximal quasi-Newton methods for nonsmooth composite optimization problems,'' at the KU Leuven Optimization in Engineering Center (OPTEC), Spa, Belgium. \spacednewline
+Jul. 2015 & ``Accelerated L-BFGS for large scale nonsmooth convex optimization,'' at the \nth{22} International Symposium on Mathematical
+    Programming (ISMP 2015), Pittsburgh, PA, USA. \spacednewline
+Dec. 2014 & ``Douglas-Rachford splitting: complexity estimates and accelerated variants,'' at the \nth{53} IEEE Conference on Decision
+    and Control (CDC 2014), Los Angeles, CA, USA.
 \end{cvsection}
 
 \begin{cvsection}{Software projects \subtitle{GitHub: \mygithub}}
-%			& {\small GitHub: \mygithub} \\ \\
-ForBES		& Generic and efficient \lang{Matlab}\ solver for nonsmooth optimization problems. The solver is provided with a library of mathematical functions used in applications, along with their gradient and proximal operations.\spacednewline
-			& Web page: \href{http://kul-forbes.github.io/ForBES}{\myurl{kul-forbes.github.io/ForBES}} \\ \\
+ForBES		& Generic and efficient \lang{Matlab}\ solver for nonsmooth optimization problems. The solver is provided with a library of mathematical functions used to model problems arising in numerous application fields such as control, machine learning, image and signal processing. Each function embeds the operators which are relevant for optimization purposes (such as gradient and proximal mappings).\spacednewline
+			& Web page: \href{http://kul-forbes.github.io/ForBES}{\myurl{kul-forbes.github.io/ForBES}} \spacednewline
 libForBES	& Framework in \lang{C++}\ for modeling and solving large-scale nonsmooth optimization problems. Started as a low-level implementation of ForBES, to overcome the drawbacks of \lang{Matlab}, it will allow to interface many high-level languages (including \lang{R}, \lang{Python}, \lang{Julia}) to a unique solver capable of addressing nonsmooth optimization problems from several application fields.\spacednewline
-			& Web page: \href{http://kul-forbes.github.io/libForBES}{\myurl{kul-forbes.github.io/libForBES}}
+			& Web page: \href{http://kul-forbes.github.io/libForBES}{\myurl{kul-forbes.github.io/libForBES}} \spacednewline
+libLBFGS	& Library written in \lang{C} containing the structures and routines necessary for computing search directions in the limited-memory BFGS algorithm (L-BFGS), for large-scale smooth unconstrained optimization. Contains a \lang{Mex} interface to \lang{Matlab}.\spacednewline
+			& Web page: \href{https://github.com/lostella/libLBFGS}{\myurl{github.com/lostella/libLBFGS}}
+\end{cvsection}
+
+\begin{cvsection}{Summary of technical skills}
+Programming & \lang{C}, \lang{Python}, \lang{MATLAB} (expert).\spacednewline
+			& \lang{C++}, \lang{Java}, \lang{Julia} (proficient). \spacednewline
+			& \lang{C\#}, \lang{Haskell}, \lang{Scheme}, \lang{R} (prior experience).
 \end{cvsection}
 
 \begin{cvsection}{Languages}
-Italian & Native\spacednewline
-English & Native
+English & Native\spacednewline
+Italian & Native
 \end{cvsection}
 
-\vspace{1em}
+%\vspace{1em}
 \centering{\color{lightgray}\footnotesize{Updated \today}}
 
 \end{document}
