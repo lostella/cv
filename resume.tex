@@ -1,0 +1,38 @@
+%\documentclass[letterpaper,10pt,oneside]{article}
+\documentclass[a4paper,10pt,oneside]{article}
+
+\input{preamble.tex}
+
+\pagestyle{empty}
+ 
+\begin{document}
+
+\begin{minipage}[t]{0.5\linewidth}
+	{\Huge\name}
+\end{minipage}%
+\begin{minipage}[t]{0.5\linewidth}
+	\hfill
+	\small
+	\begin{tabular}{rr}
+		{\color{lightgray}Email} 	& \email \\
+		{\color{lightgray}Web}		& \mywebpage \\
+		{\color{lightgray}GitHub}	& \mygithub 
+	\end{tabular}
+\end{minipage}
+
+\vspace{20pt}
+
+\input{sections/experience_short.tex}
+
+\input{sections/education_short.tex}
+
+\input{sections/software.tex}
+
+\input{sections/skills.tex}
+
+\input{sections/languages.tex}
+
+\vfill
+\centering{\color{lightgray}\footnotesize{Updated \today}}
+
+\end{document}
