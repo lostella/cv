@@ -34,54 +34,24 @@
 	\end{tabular}
 \end{minipage}
 
-\vspace{20pt}
+\vspace{10pt}
 
 \begin{cvsection}{Professional Experience}
-Sept 2015 -- now & Visiting PhD student at KU Leuven, Leuven (Belgium),\\
-	& Departement Elektrotechniek (ESAT),\\
-	& Stadius division.\hfill\href{http://www.esat.kuleuven.be/stadius}{\myurl{www.esat.kuleuven.be/stadius}}\spacednewline
-	& Teaching assistant, exercises and laboratory sessions for the Optimization class (\mbox{H03E3a}, taught by Panos Patrinos).\spacednewline
-Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).\hfill\href{http://www.imtlucca.it}{\myurl{www.imtlucca.it}}\spacednewline
-    & Convex optimization, operator splitting methods. Derivation, analysis and implementation of line-search methods based on the concept of \emph{splitting envelope} function, to tackle nonsmooth (possibly constrained) optimization problems
-    (both convex and nonconvex) with classical smooth unconstrained techniques.
-    Applications to optimal control problems, distributed optimization and large-scale
-    problems arising in machine learning, image processing.\spacednewline
+Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy)\hfill\href{http://www.imtlucca.it}{\myurl{www.imtlucca.it}}\\
+	& and KU Leuven, Leuven (Belgium).\hfill\href{http://www.esat.kuleuven.be/stadius}{\myurl{www.esat.kuleuven.be/stadius}}\spacednewline
+    & Nonsmooth optimization algorithms, applications to optimal control, distributed optimization, large-scale machine learning, image processing.
+    Teaching assistant, exercises and laboratory sessions for the ``Optimization'' class, taught by Panos Patrinos, at KU Leuven.\spacednewline
 2011 -- 2012 & Research Analyst at COSBI, Trento (Italy).\hfill\href{http://www.cosbi.eu}{\myurl{www.cosbi.eu}}\spacednewline
     & Analysis and simulation of stochastic models in systems biology (PK/PD, metabolic networks). Inference and analysis of gene regulatory networks. Development of tools
 	for stochastic simulation and network analysis in \lang{C\#}, \lang{Python}\ and \lang{Matlab}\ languages.
 \end{cvsection}
 
 \begin{cvsection}{Education}
-2008 -- 2011 & M.S. in Computer Science, University of Florence, 110/110 cum laude.\spacednewline
-%    & Thesis, supervised by Prof. Luigi Brugnano:\spacednewline
-%	& \multicolumn{1}{c}{\textsc{Efficient methods for the numerical solution }}\\[0pt]
-%    & \multicolumn{1}{c}{\textsc{of Hamiltonian problems}}\spacednewline
+2008 -- 2011 & M.S. in Computer Science, University of Florence. Final grade: 110/110 cum laude.\spacednewline
 	& Thesis supervised by Prof. Luigi Brugnano, \emph{Efficient methods for the numerical solution of Hamiltonian problems}.
-	Analysis of the effectiveness of numerical methods for ODEs with respect to the conservation of energy in the case of Hamiltonian systems. Efficient implementation of such techniques, using a framework developed \emph{ad hoc} in \lang{C}.\spacednewline
-%    & Courses attended:
-%    \begin{multicols}{2}
-%    \begin{itemize}
-%        \item Algorithm Design
-%        \item Algorithms for Networks
-%        \item Analysis of Algorithms
-%   		\item Approximation Methods I
-%   		\item Approximation Methods II
-%        \item Combinatorial Modeling
-%        \item Data Structures for Databases
-%   		\item Distributed Databases
-%   		\item Fuzzy Logic
-%		\item Information Theory
-%		\item Numerical Analysis
-%		\item Numerical Methods for CAGD
-%		\item Numerical Optimization
-%		\item Operational Research
-%	\end{itemize}
-%    \end{multicols}\spacednewline
-2004 -- 2008 & B.S. in Computer Science, University of Florence, 110/110.\spacednewline
-%    & Thesis, supervised by Prof. Luigi Brugnano:\spacednewline
-%    & \multicolumn{1}{c}{\textsc{Numerical methods in Linear Algebra with applications}}\\[0pt]
-%    & \multicolumn{1}{c}{\textsc{to Google's Pagerank}}\spacednewline
-	& Thesis supervised by Prof. Luigi Brugnano, \emph{Numerical methods in Linear Algebra with applications to Google's Pagerank}. Study of the \emph{random surfer} model and possible approaches to the calculation of the stationary point of the Markov chain associated with it. The approaches and algorithms presented were compared on the basis of experimental results obtained with \lang{Matlab}\ implementations.
+	Analysis of the effectiveness of numerical methods for ODEs with respect to the conservation of energy in the case of Hamiltonian systems. Efficient implementation of such techniques using a framework developed in \lang{C}.\spacednewline
+2004 -- 2008 & B.S. in Computer Science, University of Florence. Final grade: 110/110.\spacednewline
+	& Thesis supervised by Prof. Luigi Brugnano, \emph{Numerical methods in Linear Algebra with applications to Google's Pagerank}. Study of the \emph{random surfer} model and possible approaches to the computation of the stationary point of the associated Markov chain. Experimental results obtained with \lang{Matlab} simulations.
 \end{cvsection}
 
 \bibliographystyle{siam}
@@ -92,8 +62,7 @@ Feb 2013 -- now & PhD student at IMT School for Advanced Studies, Lucca (Italy).
 		& \bibentry{stella16forward}\spacednewline
 		& \bibentry{latafat16new}\spacednewline
 2014    & \bibentry{patrinos14douglas}\spacednewline
-        & \bibentry{patrinos14forward}%\spacednewline
-%2013    & \bibentry{scotti13modeling}
+        & \bibentry{patrinos14forward}
 \end{cvsection}
 
 \begin{cvsection}{Talks and seminars}
@@ -105,18 +74,17 @@ Dec. 2014 & ``Douglas-Rachford splitting: complexity estimates and accelerated v
 \end{cvsection}
 
 \begin{cvsection}{Software projects \subtitle{GitHub: \mygithub}}
-ForBES		& Generic and efficient \lang{Matlab}\ solver for nonsmooth optimization problems. The solver is provided with a library of mathematical functions used to model problems arising in numerous application fields such as control, machine learning, image and signal processing. Each function embeds the operators which are relevant for optimization purposes (such as gradient and proximal mappings).\spacednewline
-			& Web page: \href{http://kul-forbes.github.io/ForBES}{\myurl{kul-forbes.github.io/ForBES}} \spacednewline
-libForBES	& Framework in \lang{C++}\ for modeling and solving large-scale nonsmooth optimization problems. Started as a low-level implementation of ForBES, to overcome the drawbacks of \lang{Matlab}, it will allow to interface many high-level languages (including \lang{R}, \lang{Python}, \lang{Julia}) to a unique solver capable of addressing nonsmooth optimization problems from several application fields.\spacednewline
-			& Web page: \href{http://kul-forbes.github.io/libForBES}{\myurl{kul-forbes.github.io/libForBES}} \spacednewline
-libLBFGS	& Library written in \lang{C} containing the structures and routines necessary for computing search directions in the limited-memory BFGS algorithm (L-BFGS), for large-scale smooth unconstrained optimization. Contains a \lang{Mex} interface to \lang{Matlab}.\spacednewline
+ForBES		& \lang{Matlab}\ solver for nonsmooth optimization problems, provided with a library of mathematical functions used to model problems arising in numerous application fields such as control, machine learning, image and signal processing.\spacednewline
+			& Web page: \href{https://kul-forbes.github.io/ForBES}{\myurl{kul-forbes.github.io/ForBES}} \spacednewline
+libForBES	& \lang{C++} framework for modeling and solving large-scale nonsmooth optimization problems, will allow to interface many high-level languages (including \lang{R}, \lang{Python}, \lang{Julia}) to a unique solver capable of addressing nonsmooth optimization problems from several application fields.\spacednewline
+			& Web page: \href{https://kul-forbes.github.io/libForBES}{\myurl{kul-forbes.github.io/libForBES}} \spacednewline
+libLBFGS	& \lang{C} library providing the structures and routines for implementing the limited-memory BFGS algorithm (L-BFGS) for large-scale smooth unconstrained optimization. Contains a \lang{Mex} interface to \lang{Matlab}.\spacednewline
 			& Web page: \href{https://github.com/lostella/libLBFGS}{\myurl{github.com/lostella/libLBFGS}}
 \end{cvsection}
 
-\begin{cvsection}{Summary of technical skills}
-Programming & \lang{C}, \lang{Python}, \lang{MATLAB} (expert).\spacednewline
-			& \lang{C++}, \lang{Java}, \lang{Julia} (proficient). \spacednewline
-			& \lang{C\#}, \lang{Haskell}, \lang{Scheme}, \lang{R} (prior experience).
+\begin{cvsection}{Programming skills}
+Proficient & \lang{C}, \lang{MATLAB}, \lang{Python}, \lang{Julia}, \lang{Java}, \lang{C++} \spacednewline
+Familiar & \lang{C\#}, \lang{Haskell}
 \end{cvsection}
 
 \begin{cvsection}{Languages}
@@ -124,7 +92,6 @@ English & Native\spacednewline
 Italian & Native
 \end{cvsection}
 
-%\vspace{1em}
 \centering{\color{lightgray}\footnotesize{Updated \today}}
 
 \end{document}
