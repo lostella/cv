@@ -14,3 +14,17 @@ cv.log
 cv.synctex.gz
 
 cv.out
+
+.texpadtmp/resume.log
+
+.texpadtmp/resume.aux
+
+.texpadtmp/resume.bbl
+
+.texpadtmp/resume.blg
+
+.texpadtmp/resume.out
+
+.texpadtmp/resume.synctex.gz
+
+.DS_Store
