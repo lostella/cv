@@ -2,48 +2,44 @@
 \documentclass[a4paper,10pt,oneside]{article}
 
 \input{preamble.tex}
+
+\newcommand{\cvspace}{\vspace{15pt}}
  
 \begin{document}
 
-%{\Huge\name}
+\input{header.tex}
 
-%\vspace{20pt}
-
-\begin{minipage}[t]{0.28\linewidth}
-	{\huge\name}
-\end{minipage}\hfill
-%\begin{minipage}[t]{0.3\linewidth}
-%	\small
-%	\begin{tabular}{rl}
-%		{\color{lightgray}Address} 	& \addressCO \\
-%   		 	                       	& \addressSTREET \\
-%        		                   	& \addressCITY \\
-%	\end{tabular}
-%\end{minipage}\hfill
-\begin{minipage}[t]{0.32\linewidth}
-	\small
-	\begin{tabular}{rl}
-		{\color{lightgray}Email} 	& \emailONE \\
-									& \emailTWO \\
-		{\color{lightgray}Web}		& \mywebpage
-	\end{tabular}
-\end{minipage}
-
-\vspace{10pt}
+\cvspace
+\cvspace
+\cvspace
 
 \input{sections/experience.tex}
 
+\cvspace
+
 \input{sections/education.tex}
+
+\cvspace
 
 \input{sections/publications.tex}
 
-\input{sections/talks.tex}
+\cvspace
+
+%\input{sections/talks.tex}
+
+%\cvspace
 
 \input{sections/software.tex}
 
+\cvspace
+
 \input{sections/skills.tex}
 
+\cvspace
+
 \input{sections/languages.tex}
+
+\cvspace
 
 \centering{\color{lightgray}\footnotesize{Updated \today}}
 
