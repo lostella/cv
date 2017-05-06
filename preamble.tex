@@ -2,7 +2,7 @@
 \usepackage{xcolor}
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=3.0cm]{geometry}
 \usepackage{longtable}
 \usepackage{needspace}
 \usepackage{multicol}
@@ -31,31 +31,35 @@
 \newcommand{\addressCITY}{3001 Leuven, Belgium}
 
 % EMAIL, PHONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\emailONE}{{\tt lorenzo.stella@imtlucca.it}}
-\newcommand{\emailTWO}{{\tt lstella@esat.kuleuven.be}}
-\newcommand{\email}{{\tt lorenzostella@gmail.com}}
+\newcommand{\myemail}{lorenzostella@gmail.com}
 %\newcommand{\mobile}{+39 331 54 51 166}
 
 % OTHER COMMANDS, ENVIRONMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\spacednewline}{\\[5pt]}
 \newcommand{\subtitle}[1]{\hfill\textnormal{\footnotesize #1}}
 \newcommand{\lang}[1]{{\sc #1}}
-\newcommand{\myurl}[1]{{\tt #1}}
-\newcommand{\mygithub}{\href{https://github.com/lostella}{\myurl{github.com/lostella}}}
-\newcommand{\myscholar}{\href{http://scholar.google.com/citations?user=Y3ag8YsAAAAJ}{\myurl{scholar.google.com/citations?user=Y3ag8YsAAAAJ}}}
-\newcommand{\mywebpage}{\href{https://lostella.github.io}{\myurl{lostella.github.io}}}
-\newcommand{\myarxiv}{\href{http://arxiv.org/find/math/1/au:+Stella_L/0/1/0/all/0/1}{\myurl{arxiv.org/find/math/1/au:+Stella_L/0/1/0/all/0/1}}}
+\newcommand{\myurl}[1]{{\color{linkblue} \tt #1}}
+\newcommand{\mylink}[1]{{\color{linkblue} \bf #1}}
+\newcommand{\mygithubLABEL}{\myurl{github.com/lostella}}
+\newcommand{\mygithubURL}{https://github.com/lostella}
+\newcommand{\myscholarURL}{http://scholar.google.com/citations?user=Y3ag8YsAAAAJ}
+\newcommand{\mywebpageLABEL}{\myurl{lostella.github.io}}
+\newcommand{\mywebpageURL}{https://lostella.github.io}
 
 \definecolor{lightgray}{gray}{0.6}
-\newcolumntype{L}{>{\raggedleft}p{0.15\textwidth}}
-\newcolumntype{R}{p{0.85\textwidth}}
+\newcolumntype{L}{>{\raggedleft}p{0.13\textwidth}}
+\newcolumntype{R}{p{0.87\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \newenvironment{cvsection}[1]
-    {\centering\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\large \bf #1}\\[5pt]}
+    {\centering\begin{longtable}{L!{\VRule}R} \multicolumn{1}{r}{} & \multicolumn{1}{l}{\Large \bf #1}\\[10pt]}
     {\end{longtable}}
-    
-\newcommand{\cvspace}{\vspace{15pt}}
+
+\newcommand{\cvspace}{\vspace{10pt}}
+
+% COLORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{linkblue}{HTML}{1144AA}
 
 % FANCYHDR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
