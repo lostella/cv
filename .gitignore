@@ -15,4 +15,4 @@
 
 *.gz
 
-.texpadtmp/*
+Makefile
